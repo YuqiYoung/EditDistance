@@ -16,7 +16,7 @@ EditDistance::EditDistance(vector<BehaviorObj> &s1,vector<BehaviorObj> &s2)
         _s1=s1;
         _s2=s2;
         _editMatrix=vector< vector<int> >(s1.size()+1, vector<int>(s2.size()+1));
-        _statusMatrix=vector<vector<vector<int> > >(s1.size()+1, vector<vector<int> >(s2.size()+1,vector<int>(3)));//0:i,1:j,3:operation number
+        //_statusMatrix=vector<vector<vector<int> > >(s1.size()+1, vector<vector<int> >(s2.size()+1,vector<int>(3)));//0:i,1:j,3:operation number
         generateEditMatrix();
         backTrace();
     }
@@ -42,29 +42,25 @@ void EditDistance::backTrace()
     while(i>=1 && j>=1)
     {
         it=_superResult.begin();
-        int temp_i=_statusMatrix[i][j][0];
-        int temp_j=_statusMatrix[i][j][1];
-        int operation=_statusMatrix[i][j][2];
-        if(operation==1)
+        if(_s1[i-1].getBehaviorName() == _s2[j-1].getBehaviorName())
         {
             _superResult.insert(it,_s1[i-1]);
+            i=i-1;
+            j=j-1;
         }
-        else if(operation==2)
+        else
         {
-            _superResult.insert(it,_s1[i-1]);
-            it=_superResult.begin();
-            _superResult.insert(it,_s2[j-1]);
+            if(_editMatrix[i][j-1]<_editMatrix[i-1][j])
+            {
+                _superResult.insert(it,_s2[j-1]);
+                j=j-1;
+            }
+            else
+            {
+                _superResult.insert(it,_s1[i-1]);
+                i=i-1;
+            }
         }
-        else if(operation==3)
-        {
-            _superResult.insert(it,_s2[j-1]);
-        }
-        else//operation==4
-        {
-            _superResult.insert(it,_s1[i-1]);
-        }
-        i=temp_i;
-        j=temp_j;
     }
     while(i>=1)
     {
@@ -101,37 +97,26 @@ void EditDistance::generateEditMatrix()
             if(_s1[i-1].getBehaviorName() == _s2[j-1].getBehaviorName())
             {
                 _editMatrix[i][j]= _editMatrix[i-1][j-1];
-                _statusMatrix[i][j][0]=i-1;
-                _statusMatrix[i][j][1]=j-1;
-                _statusMatrix[i][j][2]=1;//keep the same
+                //_statusMatrix[i][j][0]=i-1;
+                //_statusMatrix[i][j][1]=j-1;
+                //_statusMatrix[i][j][2]=1;//keep the same
                 
             }
             else
             {
-                if( (_editMatrix[i-1][j-1] < _editMatrix[i-1][j]) && (_editMatrix[i-1][j-1] < _editMatrix[i][j-1]) )
+                if(_editMatrix[i-1][j]>_editMatrix[i][j-1])
                 {
-                    _editMatrix[i][j]= _editMatrix[i-1][j-1]+1;
-                    _statusMatrix[i][j][0]=i-1;
-                    _statusMatrix[i][j][1]=j-1;
-                    _statusMatrix[i][j][2]=2;//subtitude or add i and j
-
+                    _editMatrix[i][j]=_editMatrix[i][j-1]+1;
+//                    _statusMatrix[i][j][0]=i;
+//                    _statusMatrix[i][j][1]=j-1;
+//                    _statusMatrix[i][j][2]=3;//add j;
                 }
                 else
                 {
-                    if(_editMatrix[i-1][j]>_editMatrix[i][j-1])
-                    {
-                        _editMatrix[i][j]=_editMatrix[i][j-1]+1;
-                        _statusMatrix[i][j][0]=i;
-                        _statusMatrix[i][j][1]=j-1;
-                        _statusMatrix[i][j][2]=3;//add j;
-                    }
-                    else
-                    {
-                        _editMatrix[i][j]=_editMatrix[i-1][j]+1;
-                        _statusMatrix[i][j][0]=i-1;
-                        _statusMatrix[i][j][1]=j;
-                        _statusMatrix[i][j][2]=4;//add i;
-                    }
+                    _editMatrix[i][j]=_editMatrix[i-1][j]+1;
+//                    _statusMatrix[i][j][0]=i-1;
+//                    _statusMatrix[i][j][1]=j;
+//                    _statusMatrix[i][j][2]=4;//add i;
                 }
             }
         }

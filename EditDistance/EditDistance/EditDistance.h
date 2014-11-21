@@ -26,7 +26,7 @@ private:
     vector<BehaviorObj> _s1;
     vector<BehaviorObj> _s2;
     vector<vector<int> > _editMatrix;
-    vector<vector<vector<int> > > _statusMatrix;
+    //vector<vector<vector<int> > > _statusMatrix;
     vector<BehaviorObj> _superResult;
 
 };
