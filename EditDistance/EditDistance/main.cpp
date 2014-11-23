@@ -1,10 +1,10 @@
-//
+
 //  main.cpp
 //  EditDistance
 //
 //  Created by Young on 11-16－此月第3周.
 //  Copyright (c) 2014年 Young. All rights reserved.
-//
+
 
 
 //#include <iostream>
@@ -92,8 +92,8 @@
 //    
 //    vector<vector<BehaviorObj> > source;
 //    source.push_back(s1);
-//    source.push_back(s3);
 //    source.push_back(s2);
+//    source.push_back(s3);
 //
 //    //source.push_back(v4);
 //    //source.push_back(v5);
@@ -290,7 +290,7 @@ int main(int argc, char ** argv){
     //d=compareXMLFiles(argv[1], argv[2],argc>3?argv[3]:"filesystem");
     //printf("distance is %f\n",d);
     //for(int i=0;i<sectionNameArray.size();i++)
-    for(int i=1;i<2;i++)
+    for(int i=0;i<1;i++)
     {
         vector<vector<BehaviorObj> > source;
         cout<<"<"<<sectionNameArray[i]<<">"<<endl;

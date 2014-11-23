@@ -96,7 +96,8 @@ void MultiEditDistanceBasedOnTwo::generateAlignedResult()
             if(_source[i][cur].getBehaviorName() == _superResult[j].getBehaviorName())
             {
                 _alignedResult[i].push_back(_source[i][cur]);
-                cur=cur+1;
+                if(cur+1<_source[i].size())
+                    cur=cur+1;
             }
             else
             {
