@@ -16,21 +16,20 @@ EditDistance::EditDistance(vector<BehaviorObj> &s1,vector<BehaviorObj> &s2)
         _s1=s1;
         _s2=s2;
         _editMatrix=vector< vector<int> >(s1.size()+1, vector<int>(s2.size()+1));
-        //_statusMatrix=vector<vector<vector<int> > >(s1.size()+1, vector<vector<int> >(s2.size()+1,vector<int>(3)));//0:i,1:j,3:operation number
         generateEditMatrix();
         backTrace();
     }
     else if(s1.size()<1&&s2.size()>0)
     {
-        _superResult=s2;
+        _superResult=&s2;
     }
     else if(s2.size()<1&&s1.size()>0)
     {
-        _superResult=s1;
+        _superResult=&s1;
     }
     else
     {
-        _superResult=vector<BehaviorObj>();
+        _superResult=NULL;
     }
 }
 
@@ -41,10 +40,40 @@ void EditDistance::backTrace()
     std::vector<BehaviorObj>::iterator it;
     while(i>=1 && j>=1)
     {
-        it=_superResult.begin();
+        it=(*_superResult).begin();
         if(_s1[i-1].getBehaviorName() == _s2[j-1].getBehaviorName())
         {
-            _superResult.insert(it,_s1[i-1]);
+            BehaviorObj superNode= BehaviorObj(_s1[i-1].getBehaviorName(),"");
+            //superNode.setParentNode(NULL);
+            if(_s1[i-1].childNodesVec.size()>0)//is not a original node
+            {
+                for(int n=0; n<_s1[i-1].childNodesVec.size(); n++)
+                {
+                    (*_s1[i-1].childNodesVec[n]).parentNode=&superNode;
+                    superNode.childNodesVec.push_back(_s1[i-1].childNodesVec[n]);
+                }
+            }
+            else
+            {
+                _s1[i-1].parentNode=&superNode;
+                superNode.childNodesVec.push_back(&_s1[i-1]);
+
+            }
+            if(_s2[j-1].childNodesVec.size()>0)
+            {
+                for(int n=0; n<_s2[j-1].childNodesVec.size(); n++)
+                {
+                    (*_s2[j-1].childNodesVec[n]).parentNode=&superNode;
+                    superNode.childNodesVec.push_back(_s2[j-1].childNodesVec[n]);
+                }
+            }
+            else
+            {
+                _s2[j-1].parentNode=&superNode;
+                superNode.childNodesVec.push_back(&_s2[j-1]);
+            }
+
+            (*_superResult).insert(it,superNode);
             i=i-1;
             j=j-1;
         }
@@ -52,27 +81,94 @@ void EditDistance::backTrace()
         {
             if(_editMatrix[i][j-1]<_editMatrix[i-1][j])
             {
-                _superResult.insert(it,_s2[j-1]);
+                BehaviorObj superNode= BehaviorObj(_s2[j-1].getBehaviorName(),"");
+                if(_s2[j-1].childNodesVec.size()>0)
+                {
+                    for(int n=0; n<_s2[j-1].childNodesVec.size(); n++)
+                    {
+                        (*_s2[j-1].childNodesVec[n]).parentNode=&superNode;
+                        superNode.childNodesVec.push_back(_s2[j-1].childNodesVec[n]);
+                    }
+                }
+                else
+                {
+                    _s2[j-1].parentNode=&superNode;
+                    superNode.childNodesVec.push_back(&_s2[j-1]);
+                }
+
+                (*_superResult).insert(it,superNode);
                 j=j-1;
             }
             else
             {
-                _superResult.insert(it,_s1[i-1]);
+                BehaviorObj superNode= BehaviorObj(_s1[i-1].getBehaviorName(),"");
+                //superNode.setParentNode(NULL);
+                if(_s1[i-1].childNodesVec.size()>0)//is not a original node
+                {
+                    for(int n=0; n<_s1[i-1].childNodesVec.size(); n++)
+                    {
+                        (*_s1[i-1].childNodesVec[n]).parentNode=&superNode;
+                        superNode.childNodesVec.push_back(_s1[i-1].childNodesVec[n]);
+                    }
+                }
+                else
+                {
+                    _s1[i-1].parentNode=&superNode;
+                    superNode.childNodesVec.push_back(&_s1[i-1]);
+                    
+                }
+                (*_superResult).insert(it,superNode);
                 i=i-1;
             }
         }
     }
     while(i>=1)
     {
-        it=_superResult.begin();
-        _superResult.insert(it,_s1[i-1]);
+        it=(*_superResult).begin();
+        BehaviorObj superNode= BehaviorObj(_s1[i-1].getBehaviorName(),"");
+        //superNode.setParentNode(NULL);
+        if(_s1[i-1].childNodesVec.size()>0)//is not a original node
+        {
+            for(int n=0; n<_s1[i-1].childNodesVec.size(); n++)
+            {
+                (*_s1[i-1].childNodesVec[n]).parentNode=&superNode;
+                superNode.childNodesVec.push_back(_s1[i-1].childNodesVec[n]);
+            }
+        }
+        else
+        {
+            _s1[i-1].parentNode=&superNode;
+            superNode.childNodesVec.push_back(&_s1[i-1]);
+            
+        }
+        (*_superResult).insert(it,superNode);
         i--;
     }
     while(j>=1)
     {
-        it=_superResult.begin();
-        _superResult.insert(it,_s2[j-1]);
+        it=(*_superResult).begin();
+        BehaviorObj superNode= BehaviorObj(_s2[j-1].getBehaviorName(),"");
+        if(_s2[j-1].childNodesVec.size()>0)
+        {
+            for(int n=0; n<_s2[j-1].childNodesVec.size(); n++)
+            {
+                (*_s2[j-1].childNodesVec[n]).parentNode=&superNode;
+                superNode.childNodesVec.push_back(_s2[j-1].childNodesVec[n]);
+            }
+        }
+        else
+        {
+            _s2[j-1].parentNode=&superNode;
+            superNode.childNodesVec.push_back(&_s2[j-1]);
+        }
+        
+        (*_superResult).insert(it,superNode);
         j--;
+    }
+    
+    for(int i=0;i<(*_superResult).size();i++)
+    {
+        (*_superResult)[i].superID=i;
     }
 }
 
@@ -96,27 +192,18 @@ void EditDistance::generateEditMatrix()
         {
             if(_s1[i-1].getBehaviorName() == _s2[j-1].getBehaviorName())
             {
-                _editMatrix[i][j]= _editMatrix[i-1][j-1];
-                //_statusMatrix[i][j][0]=i-1;
-                //_statusMatrix[i][j][1]=j-1;
-                //_statusMatrix[i][j][2]=1;//keep the same
+                _editMatrix[i][j]= _editMatrix[i-1][j-1];//keep the same
                 
             }
             else
             {
                 if(_editMatrix[i-1][j]>_editMatrix[i][j-1])
                 {
-                    _editMatrix[i][j]=_editMatrix[i][j-1]+1;
-//                    _statusMatrix[i][j][0]=i;
-//                    _statusMatrix[i][j][1]=j-1;
-//                    _statusMatrix[i][j][2]=3;//add j;
+                    _editMatrix[i][j]=_editMatrix[i][j-1]+1;//add j;
                 }
                 else
                 {
-                    _editMatrix[i][j]=_editMatrix[i-1][j]+1;
-//                    _statusMatrix[i][j][0]=i-1;
-//                    _statusMatrix[i][j][1]=j;
-//                    _statusMatrix[i][j][2]=4;//add i;
+                    _editMatrix[i][j]=_editMatrix[i-1][j]+1;//add i;
                 }
             }
         }
@@ -125,7 +212,7 @@ void EditDistance::generateEditMatrix()
 
 vector<BehaviorObj> EditDistance::getSuperResult()
 {
-    return _superResult;
+    return *_superResult;
 }
 
 void EditDistance::printEditMatrix()
@@ -154,9 +241,9 @@ void EditDistance::printEditMatrix()
 
 void EditDistance::printSuperResult()
 {
-    for(int i=0;i<(int)_superResult.size();i++)
+    for(int i=0;i<(int)(*_superResult).size();i++)
     {
-        cout<<_superResult[i].getBehaviorName()<<" ";
+        cout<<(*_superResult)[i].getBehaviorName()<<" ";
     }
     cout<<endl;
     

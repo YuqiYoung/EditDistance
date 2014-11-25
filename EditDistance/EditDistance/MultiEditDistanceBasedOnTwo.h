@@ -10,7 +10,6 @@
 #define __EditDistance__MultiEditDistanceBasedOnTwo__
 
 #include <stdio.h>
-#include "EditDistance.h"
 #include "BehaviorObj.h"
 #include <list>
 #include <vector>
@@ -18,18 +17,21 @@
 class MultiEditDistanceBasedOnTwo
 {
 public:
-    MultiEditDistanceBasedOnTwo(vector<vector<BehaviorObj> > &source);
+    MultiEditDistanceBasedOnTwo(vector<vector<BehaviorObj*> > &source);
+    ~MultiEditDistanceBasedOnTwo();
     void generateSuperResult();
     void generateAlignedResult();
-    vector<BehaviorObj> getSuperResult();
+    vector<BehaviorObj*> getSuperResult();
     vector<list<BehaviorObj> > getAlignedResult();
     void printAlignedResults();
-    void printSuperResult();
+    //void printSuperResult();
+    void generateEditMatrix(vector< vector<int> > &editMatrix,vector<BehaviorObj*> &s1,vector<BehaviorObj*> &s2);
+    void backTrace(vector< vector<int> > &editMatrix,vector<BehaviorObj*> &s1,vector<BehaviorObj*> &s2,vector<BehaviorObj*> &superResult);
 
     
 private:
-    vector<vector<BehaviorObj> > _source;
-    vector<BehaviorObj> _superResult;
+    vector<vector<BehaviorObj*> > _source;
+    vector<BehaviorObj*> _superResult;
     vector<list<BehaviorObj> > _alignedResult;
 
     

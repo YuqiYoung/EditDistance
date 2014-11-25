@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include "tinyxml2.h"
+#include <vector>
 using namespace std;
 //behavior object
 class BehaviorObj
@@ -19,10 +20,20 @@ private:
     string _behaviorName;//some operation names such as write, read and so on
     string _targetFileName;//the target file name of this operation，eg. file1.txt
     tinyxml2::XMLElement *_details;
+
+    
     
 public:
+    BehaviorObj *parentNode;
+    vector<BehaviorObj*> childNodesVec;
+    int superID;
+
     BehaviorObj(const string bn, const string tFN);
     BehaviorObj(const string bn, const string tFN, tinyxml2::XMLElement* d);
+    BehaviorObj(const BehaviorObj &temp);
+    BehaviorObj & operator =(const BehaviorObj &temp);
+
+    ~BehaviorObj();
     string getBehaviorName();
     string getTargetFileName();
     tinyxml2::XMLElement* getDetails();
