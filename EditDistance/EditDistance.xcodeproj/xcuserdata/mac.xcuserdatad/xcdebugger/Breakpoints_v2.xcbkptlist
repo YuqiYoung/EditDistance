@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559287.66764"
+            timestampString = "438716236.226446"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
             endingLineNumber = "14"
-            landmarkName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(vector&lt;vector&lt;BehaviorObj*&gt; &gt; &amp;source)"
+            landmarkName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(vector&lt;vector&lt;BehaviorObj*&gt; &gt; &amp;source,int baseID)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,23 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/MultiEditDistanceBasedOnTwo.h"
-            timestampString = "438117690.728937"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "class MultiEditDistanceBasedOnTwo"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.h"
-            timestampString = "438117691.795834"
+            timestampString = "438716236.226446"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -73,30 +57,74 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559287.66764"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.h"
+            timestampString = "438716236.226446"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(vector&lt;vector&lt;BehaviorObj*&gt; &gt; &amp;source)"
-            landmarkType = "5">
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "class MultiEditDistanceBasedOnTwo"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559287.66764"
+            timestampString = "438990898.459076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(vector&lt;vector&lt;BehaviorObj*&gt; &gt; &amp;source)"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(vector&lt;vector&lt;BehaviorObj*&gt; &gt; &amp;source,int baseID)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(std::__1::vector&lt;std::__1::vector&lt;BehaviorObj*, std::__1::allocator&lt;BehaviorObj*&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;BehaviorObj*, std::__1::allocator&lt;BehaviorObj*&gt; &gt; &gt; &gt;&amp;, int)"
+                  moduleName = "EditDistance"
+                  urlString = "file:///Users/mac/GitHub/EditDistance/EditDistance/EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+                  timestampString = "439095256.069178"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "2336">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(std::__1::vector&lt;std::__1::vector&lt;BehaviorObj*, std::__1::allocator&lt;BehaviorObj*&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;BehaviorObj*, std::__1::allocator&lt;BehaviorObj*&gt; &gt; &gt; &gt;&amp;, int)"
+                  moduleName = "EditDistance"
+                  urlString = "file:///Users/mac/GitHub/EditDistance/EditDistance/EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+                  timestampString = "439095256.069436"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "2354">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(std::__1::vector&lt;std::__1::vector&lt;BehaviorObj*, std::__1::allocator&lt;BehaviorObj*&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;BehaviorObj*, std::__1::allocator&lt;BehaviorObj*&gt; &gt; &gt; &gt;&amp;, int)"
+                  moduleName = "EditDistance"
+                  urlString = "file:///Users/mac/GitHub/EditDistance/EditDistance/EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+                  timestampString = "439095256.069584"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -218,11 +246,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/main.cpp"
-            timestampString = "438556703.344923"
+            timestampString = "438732651.384905"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "main(int argc, const char * argv[])"
             landmarkType = "7">
          </BreakpointContent>
@@ -234,11 +262,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/main.cpp"
-            timestampString = "438556703.344923"
+            timestampString = "438732651.384905"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "main(int argc, const char * argv[])"
             landmarkType = "7">
          </BreakpointContent>
@@ -250,27 +278,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559287.66764"
+            timestampString = "438990898.459076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(vector&lt;vector&lt;BehaviorObj*&gt; &gt; &amp;source)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559424.131864"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "MultiEditDistanceBasedOnTwo::generateSuperResult()"
             landmarkType = "5">
          </BreakpointContent>
@@ -282,11 +294,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559424.131864"
+            timestampString = "438990898.459076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "MultiEditDistanceBasedOnTwo::generateSuperResult()"
             landmarkType = "5">
          </BreakpointContent>
@@ -298,11 +310,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559424.131864"
+            timestampString = "438990898.459076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "MultiEditDistanceBasedOnTwo::generateSuperResult()"
             landmarkType = "5">
          </BreakpointContent>
@@ -314,11 +326,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559424.131864"
+            timestampString = "438990898.459076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "MultiEditDistanceBasedOnTwo::generateSuperResult()"
             landmarkType = "5">
          </BreakpointContent>
@@ -330,11 +342,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/main.cpp"
-            timestampString = "438571143.59637"
+            timestampString = "438732651.384905"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "main(int argc, const char * argv[])"
             landmarkType = "7">
          </BreakpointContent>
@@ -346,12 +358,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559287.66764"
+            timestampString = "438716236.226446"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(vector&lt;vector&lt;BehaviorObj*&gt; &gt; &amp;source)"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(vector&lt;vector&lt;BehaviorObj*&gt; &gt; &amp;source,int baseID)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -362,11 +374,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559424.131864"
+            timestampString = "438990898.459076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
             landmarkName = "MultiEditDistanceBasedOnTwo::generateSuperResult()"
             landmarkType = "5">
             <Locations>
@@ -408,59 +420,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559424.131864"
+            timestampString = "438990898.459076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "MultiEditDistanceBasedOnTwo::generateSuperResult()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559424.131864"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "MultiEditDistanceBasedOnTwo::generateSuperResult()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559424.131864"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "MultiEditDistanceBasedOnTwo::generateSuperResult()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559424.131864"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "MultiEditDistanceBasedOnTwo::generateSuperResult()"
             landmarkType = "5">
          </BreakpointContent>
@@ -472,11 +436,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559424.131864"
+            timestampString = "438990898.459076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "MultiEditDistanceBasedOnTwo::generateSuperResult()"
             landmarkType = "5">
          </BreakpointContent>
@@ -484,20 +448,68 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
-            timestampString = "438559304.915325"
+            timestampString = "438990898.459076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(vector&lt;vector&lt;BehaviorObj*&gt; &gt; &amp;source)"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "MultiEditDistanceBasedOnTwo::generateSuperResult()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438990898.459076"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "MultiEditDistanceBasedOnTwo::generateSuperResult()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438990898.459076"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "MultiEditDistanceBasedOnTwo::generateSuperResult()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438990898.459076"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(vector&lt;vector&lt;BehaviorObj*&gt; &gt; &amp;source,int baseID)"
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(std::__1::vector&lt;std::__1::vector&lt;BehaviorObj*, std::__1::allocator&lt;BehaviorObj*&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;BehaviorObj*, std::__1::allocator&lt;BehaviorObj*&gt; &gt; &gt; &gt;&amp;)"
@@ -511,7 +523,7 @@
                   offsetFromSymbolStart = "935">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(std::__1::vector&lt;std::__1::vector&lt;BehaviorObj*, std::__1::allocator&lt;BehaviorObj*&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;BehaviorObj*, std::__1::allocator&lt;BehaviorObj*&gt; &gt; &gt; &gt;&amp;)"
@@ -525,7 +537,7 @@
                   offsetFromSymbolStart = "944">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(std::__1::vector&lt;std::__1::vector&lt;BehaviorObj*, std::__1::allocator&lt;BehaviorObj*&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;BehaviorObj*, std::__1::allocator&lt;BehaviorObj*&gt; &gt; &gt; &gt;&amp;)"
@@ -539,6 +551,294 @@
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438732651.384905"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "456"
+            endingLineNumber = "456"
+            landmarkName = "MultiEditDistanceBasedOnTwo::initEdges()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438994319.329362"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1005"
+            endingLineNumber = "1005"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Reduce_crossing()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438990724.601023"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(vector&lt;vector&lt;BehaviorObj*&gt; &gt; &amp;source,int baseID)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438990795.944829"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(vector&lt;vector&lt;BehaviorObj*&gt; &gt; &amp;source,int baseID)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438990826.28019"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "523"
+            endingLineNumber = "523"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Create_Level()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438990828.488179"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "535"
+            endingLineNumber = "535"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Create_Level()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438991000.645983"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "MultiEditDistanceBasedOnTwo::MultiEditDistanceBasedOnTwo(vector&lt;vector&lt;BehaviorObj*&gt; &gt; &amp;source,int baseID)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438991366.673961"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "617"
+            endingLineNumber = "617"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Split_edges()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438991368.511434"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "621"
+            endingLineNumber = "621"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Split_edges()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438991564.464597"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "692"
+            endingLineNumber = "692"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Phase1_up(int level)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438991602.178888"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "693"
+            endingLineNumber = "693"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Phase1_up(int level)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438994319.329362"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "995"
+            endingLineNumber = "995"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Reduce_crossing()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438994319.329362"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1002"
+            endingLineNumber = "1002"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Reduce_crossing()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438994319.329362"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "744"
+            endingLineNumber = "744"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Phase1_down(int level)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438994319.329362"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "745"
+            endingLineNumber = "745"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Phase1_down(int level)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438994319.329362"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "761"
+            endingLineNumber = "761"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Phase1_down(int level)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438994319.329362"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "760"
+            endingLineNumber = "760"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Phase1_down(int level)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditDistance/MultiEditDistanceBasedOnTwo.cpp"
+            timestampString = "438994036.630758"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "702"
+            endingLineNumber = "702"
+            landmarkName = "MultiEditDistanceBasedOnTwo::Phase1_up(int level)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

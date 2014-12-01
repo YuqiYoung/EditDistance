@@ -27,7 +27,12 @@ int main(int argc, const char * argv[]) {
     BehaviorObj *b1=new BehaviorObj("b","s1");
     BehaviorObj *c1=new BehaviorObj("c","s1");
     BehaviorObj *d1=new BehaviorObj("d","s1");
+    BehaviorObj *e1=new BehaviorObj("e","s1");
+    BehaviorObj *f1=new BehaviorObj("f","s1");
     
+    BehaviorObj *a2=new BehaviorObj("a","s2");
+    BehaviorObj *b2=new BehaviorObj("b","s2");
+    BehaviorObj *c2=new BehaviorObj("c","s2");
     BehaviorObj *d2=new BehaviorObj("d","s2");
     BehaviorObj *e2=new BehaviorObj("e","s2");
     BehaviorObj *f2=new BehaviorObj("f","s2");
@@ -37,25 +42,27 @@ int main(int argc, const char * argv[]) {
     BehaviorObj *a3=new BehaviorObj("a","s3");
     BehaviorObj *b3=new BehaviorObj("b","s3");
     BehaviorObj *c3=new BehaviorObj("c","s3");
+    BehaviorObj *d3=new BehaviorObj("d","s3");
     
     vector<BehaviorObj*> s1;
     s1.push_back(a1);
     s1.push_back(b1);
     s1.push_back(c1);
     s1.push_back(d1);
+    s1.push_back(e1);
+    s1.push_back(f1);
     
     vector<BehaviorObj*> s2;
+    s2.push_back(a2);
+    s2.push_back(c2);
     s2.push_back(d2);
-    s2.push_back(e2);
     s2.push_back(f2);
 
     
     vector<BehaviorObj*> s3;
-    s3.push_back(e3);
-    s3.push_back(f3);
     s3.push_back(a3);
     s3.push_back(b3);
-    s3.push_back(c3);
+    s3.push_back(f3);
 
     
 //    vector<BehaviorObj> v1;
@@ -111,8 +118,8 @@ int main(int argc, const char * argv[]) {
 //    myED.printSuperResult();
 //    myED.printEditMatrix();
     cout<<"~~~~"<<endl;
-    MultiEditDistanceBasedOnTwo MED(source);
-    MED.printAlignedResults();
+    MultiEditDistanceBasedOnTwo MED(source,0);
+    //MED.printAlignedResults();
     
     for(int i=0;i<source.size();i++)
     {
